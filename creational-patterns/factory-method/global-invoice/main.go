@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	inv := factory.CreateInvoice("korea", 1000)
+	inv := factory.InvoiceFactory("korea", 1000)
 	fmt.Printf("Invoice Amount :: %s %.2f\n", inv.Currency, inv.Amount)
 	fmt.Printf("Invoice Tax :: %s %.2f\n", inv.Currency, inv.Tax)
 	fmt.Printf("Invoice Total :: %s %.2f\n", inv.Currency, inv.Total)

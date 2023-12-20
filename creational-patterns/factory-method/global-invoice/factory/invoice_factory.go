@@ -5,7 +5,7 @@ import (
 	"github.com/seojoo21/design-patterns-in-go/creational-patterns/factory-method/global-invoice/schema"
 )
 
-func CreateInvoice(countryName string, amount float64) *schema.InvoiceSchema {
+func InvoiceFactory(countryName string, amount float64) *schema.InvoiceSchema {
 	switch countryName {
 	case "korea":
 		inv := &country.KoreaInvoice{}
